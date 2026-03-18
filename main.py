@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # ★ここに自分のMacroDroid URLを貼り付ける
-MACRODROID_URL = "https://trigger.macrodroid.com/c541398f-d6e5-4532-8f13-c98c66a71c99/1"
+MACRODROID_URL ="https://trigger.macrodroid.com/c541398f-d6e5-4532-8f13-c98c66a71c99/1"
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
