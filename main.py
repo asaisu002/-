@@ -10,7 +10,7 @@ MACRODROID_URL = "https://trigger.macrodroid.com/c541398f-d6e5-4532-8f13-c98c66a
 def webhook():
     data = request.json
     if data and 'data' in data:
-        status = data['data']['object']['payment']['status']
+        status = data['type']
         if status == 'COMPLETED':
             print("決済完了！スマホを動かします。")
             requests.get(MACRODROID_URL)
